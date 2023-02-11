@@ -2,18 +2,18 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "cppbuild",
-			"label": "C/C++: g++.exe 生成活动文件",
-			"command": "C:/mingw/mingw64/bin/g++.exe",
+			"type": "shell",
+			"label": "C/C++: g++ 生成活动文件",
+			"command": "/usr/bin/g++",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
 				"${file}",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+				"${fileDirname}/${fileBasenameNoExtension}"
 			],
 			"options": {
-				"cwd": "C:/mingw/mingw64/bin"
+				"cwd": "/usr/bin"
 			},
 			"problemMatcher": [
 				"$gcc"
@@ -22,7 +22,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "编译器: C:/mingw/mingw64/bin/g++.exe"
+			"detail": "编译器: /usr/bin/g++"
 		}
 	]
 }

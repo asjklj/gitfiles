@@ -1,6 +1,7 @@
 #include <iostream>
+#include "hello.h"
 using namespace std;
 int main(){
-cout <<"hello";
-system("pause");
+    Hello n;
+    cout <<1;
 }
