@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class zifu
+class ZiFU
 {
 public:
     int a[26] = {0};
@@ -11,12 +11,12 @@ int main()
     int n;
     cin >> n;
     int m = 0;
-    zifu *p = new zifu[n];
+    ZiFU *p = new ZiFU[n];
     for (int i = 0; i < n; i++)
     {
         string s;
         cin >> s;
-        zifu r;
+        ZiFU r;
         bool flag = true;
         for (int j = 0; s[j] != '\0'; j++)
         {
